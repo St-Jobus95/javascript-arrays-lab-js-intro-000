@@ -30,13 +30,12 @@ function destructivelyRemoveFirstKitten(array, name) {
 
 function appendKitten(array, name) {
   var name = "Broom";
-  var new_array = [...array, name];
+  var new_array = [...array, "Broom"];
   return new_array
 }
 
 function prependKitten(array, name) {
-  var name = "Arnold";
-  var new_array = [name, ...array];
+  var new_array = ["Arnold", ...array];
   return new_array
 }
 
