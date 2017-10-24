@@ -30,24 +30,24 @@ function destructivelyRemoveFirstKitten(array, name) {
 
 function appendKitten(array, name) {
   var name = "Broom";
-  var new_array = [...array, name]
+  var new_array = [...array, name];
   return new_array
 }
 
 function prependKitten(array, name) {
   var name = "Arnold";
-  var new_array = [name, ...array]
+  var new_array = [name, ...array];
   return new_array
 }
 
 function removeLastKitten(array, name) {
   var name = "Ralph";
-  kittens.pop(name);
+  kittens.slice(0, kittens.length - 1);
   return kittens
 }
 
 function removeFirstKitten(array, name) {
   var name = "Bob";
-  kittens.shift(name);
+  kittens.slice(1);
   return kittens
 }
