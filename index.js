@@ -28,22 +28,22 @@ function destructivelyRemoveFirstKitten(array, name) {
   return kittens
 }
 
-function appendKitten(array, name) {
-  var new_array = [...array, "Broom"];
+function appendKitten(name) {
+  var new_array = [...kittens, "Broom"];
   return new_array
 }
 
-function prependKitten(array, name) {
-  var new_array = ["Arnold", ...array];
+function prependKitten(name) {
+  var new_array = ["Arnold", ...kittens];
   return new_array
 }
 
-function removeLastKitten(array, name) {
+function removeLastKitten(name) {
   kittens.slice(0, kittens.length - 1);
   return new_array
 }
 
-function removeFirstKitten(array, name) {
+function removeFirstKitten(name) {
   kittens.slice(1);
   return new_array
 }
